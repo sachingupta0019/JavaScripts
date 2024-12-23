@@ -1,0 +1,35 @@
+#checkbox{
+    visibility: hidden;
+}
+
+.toggle-label{
+    background-color: #18122b;
+    height: 4rem;
+    width:6rem;
+    display: inline-block;
+    position: relative;
+    border-radius: 10rem;
+}
+
+.toggle-ball{
+    height:3rem ;
+    width: 3rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color:whitesmoke;
+    position: absolute;
+    top:.5rem;
+    left:.5rem;
+    transition: all .2s linear;
+}
+
+#checkbox:checked + .toggle-label .toggle-ball{
+    background-color:rgb(197, 197, 101);
+    transform: translate(2rem);
+}
+
+.dark-mode{
+    background-color: black;
+    color:white;
+}
+

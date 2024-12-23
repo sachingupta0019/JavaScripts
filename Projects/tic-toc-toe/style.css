@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #B9CE50;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg-container{
+    height: 100vh;
+    display: flex;  
+    flex-wrap: wrap;   
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;   
+}
+#msg{
+    justify-content: center;
+    align-items: center;
+    font-size: 8vmin;
+    color:rgb(243, 243, 243);
+    background-color:green;
+    margin-bottom: 5rem;
+}
+.head{
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    font-size: 8vmin;
+    background-color: rgb(212, 84, 235);
+    color:black;
+    box-shadow: 0,0,1.5rem,rgb(1.5, 0,1);
+    cursor: pointer;
+}
+
+
+.button-container {
+    display: flex;        
+    justify-content: center; 
+    align-items: center;       
+}
+
+.reset-btn{
+    background-color: black;
+    color:white;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border:none;
+    padding:1rem;
+    cursor: pointer;
+}
+
+.start-btn{
+    background-color: black;
+    color:white;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border:none;
+    padding:1rem;
+    cursor: pointer;
+
+}
+
+.hide{
+    display: none;
+}
+
+.display-mode{
+    justify-content: end;
+    display: flex;
+    border:none;
+    margin:0px 0px 10px 0px;
+    background-color: blue;
+    height: 50px;
+
+}
+
+.toggle-label{
+    background-color: #18122b;
+    height:2rem;
+    width:4em;
+    border-radius: 5rem;
+    margin-top:5px;
+    margin-right:5px;
+}
+
+.toggle-btn{
+    background-color:white;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 5rem;
+    display: inline-block;
+    margin:.3rem;
+    left: .3rem;
+    transition: all .2s linear;
+}
+
+#checkbox:checked + .toggle-label .toggle-btn{
+    background-color: #a99c0a;
+    transform: translate(1.8rem);
+}
+
+#checkbox{
+    visibility: hidden;
+    text-align: none;
+}
+
+.dark-mode{
+    background-color: black;
+    color:white;
+}
+
+.dark-mode-btn{
+    background-color: #fff;
+    color:black;
+}
+
+.winning-box {
+    background-color: #4caf50; 
+    color: white;
+    font-weight: bold;
+}
